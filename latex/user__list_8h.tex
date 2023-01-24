@@ -1,0 +1,141 @@
+\hypertarget{user__list_8h}{}\doxysection{user\+\_\+list.\+h File Reference}
+\label{user__list_8h}\index{user\_list.h@{user\_list.h}}
+{\ttfamily \#include \char`\"{}user.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structuser__list}{user\+\_\+list}}
+\item 
+struct \mbox{\hyperlink{structuser__list__node}{user\+\_\+list\+\_\+node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structuser__list}{user\+\_\+list}} \mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}}
+\item 
+typedef struct \mbox{\hyperlink{structuser__list__node}{user\+\_\+list\+\_\+node}} \mbox{\hyperlink{user__list_8h_acff1706206d645ca7003e1797d20c507}{USER\+\_\+\+LIST\+\_\+\+NODE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$ \mbox{\hyperlink{user__list_8h_a361f9a8c3907b61f2ecfd4db9306483a}{user\+\_\+list\+\_\+create}} ()
+\item 
+void \mbox{\hyperlink{user__list_8h_a205022bd52e0ae7d452c470cfd1067cd}{user\+\_\+list\+\_\+add\+\_\+sorted}} (\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$\mbox{\hyperlink{structuser__list}{user\+\_\+list}}, \mbox{\hyperlink{user_8h_a49b98517e75d42b7645342221a8b8079}{USER}} $\ast$\mbox{\hyperlink{structuser}{user}})
+\item 
+void \mbox{\hyperlink{user__list_8h_a63030a7b2eea31ad78c622753ccfa16a}{user\+\_\+list\+\_\+add\+\_\+head}} (\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$\mbox{\hyperlink{structuser__list}{user\+\_\+list}}, \mbox{\hyperlink{user_8h_a49b98517e75d42b7645342221a8b8079}{USER}} $\ast$\mbox{\hyperlink{structuser}{user}})
+\item 
+void \mbox{\hyperlink{user__list_8h_a88874cce6fef9e68428c9e542fe5416b}{user\+\_\+list\+\_\+add\+\_\+tail}} (\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$\mbox{\hyperlink{structuser__list}{user\+\_\+list}}, \mbox{\hyperlink{user_8h_a49b98517e75d42b7645342221a8b8079}{USER}} $\ast$\mbox{\hyperlink{structuser}{user}})
+\item 
+\mbox{\hyperlink{user_8h_a49b98517e75d42b7645342221a8b8079}{USER}} $\ast$ \mbox{\hyperlink{user__list_8h_a5e487522acf92090158e9868b8660d88}{user\+\_\+list\+\_\+get}} (\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$\mbox{\hyperlink{structuser__list}{user\+\_\+list}}, char $\ast$name)
+\item 
+\mbox{\hyperlink{user_8h_a49b98517e75d42b7645342221a8b8079}{USER}} $\ast$ \mbox{\hyperlink{user__list_8h_abd6838f11c3ec7138eea09a2dcceb8fa}{user\+\_\+list\+\_\+remove}} (\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$\mbox{\hyperlink{structuser__list}{user\+\_\+list}}, char $\ast$name)
+\item 
+int \mbox{\hyperlink{user__list_8h_ab3729293daa68b08953787ababb179ba}{user\+\_\+list\+\_\+size}} (\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$\mbox{\hyperlink{structuser__list}{user\+\_\+list}})
+\item 
+void \mbox{\hyperlink{user__list_8h_ae68547103fa1e1bae433f8596e9ac790}{user\+\_\+list\+\_\+sort}} (\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$\mbox{\hyperlink{structuser__list}{user\+\_\+list}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}\label{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}} 
+\index{user\_list.h@{user\_list.h}!USER\_LIST@{USER\_LIST}}
+\index{USER\_LIST@{USER\_LIST}!user\_list.h@{user\_list.h}}
+\doxysubsubsection{\texorpdfstring{USER\_LIST}{USER\_LIST}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structuser__list}{user\+\_\+list}} \mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}}}
+
+\mbox{\Hypertarget{user__list_8h_acff1706206d645ca7003e1797d20c507}\label{user__list_8h_acff1706206d645ca7003e1797d20c507}} 
+\index{user\_list.h@{user\_list.h}!USER\_LIST\_NODE@{USER\_LIST\_NODE}}
+\index{USER\_LIST\_NODE@{USER\_LIST\_NODE}!user\_list.h@{user\_list.h}}
+\doxysubsubsection{\texorpdfstring{USER\_LIST\_NODE}{USER\_LIST\_NODE}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structuser__list__node}{user\+\_\+list\+\_\+node}} \mbox{\hyperlink{user__list_8h_acff1706206d645ca7003e1797d20c507}{USER\+\_\+\+LIST\+\_\+\+NODE}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{user__list_8h_a63030a7b2eea31ad78c622753ccfa16a}\label{user__list_8h_a63030a7b2eea31ad78c622753ccfa16a}} 
+\index{user\_list.h@{user\_list.h}!user\_list\_add\_head@{user\_list\_add\_head}}
+\index{user\_list\_add\_head@{user\_list\_add\_head}!user\_list.h@{user\_list.h}}
+\doxysubsubsection{\texorpdfstring{user\_list\_add\_head()}{user\_list\_add\_head()}}
+{\footnotesize\ttfamily void user\+\_\+list\+\_\+add\+\_\+head (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$}]{user\+\_\+list,  }\item[{\mbox{\hyperlink{user_8h_a49b98517e75d42b7645342221a8b8079}{USER}} $\ast$}]{user }\end{DoxyParamCaption})}
+
+Add user to head 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structuser__list}{user\+\_\+list}}} & \\
+\hline
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{user__list_8h_a205022bd52e0ae7d452c470cfd1067cd}\label{user__list_8h_a205022bd52e0ae7d452c470cfd1067cd}} 
+\index{user\_list.h@{user\_list.h}!user\_list\_add\_sorted@{user\_list\_add\_sorted}}
+\index{user\_list\_add\_sorted@{user\_list\_add\_sorted}!user\_list.h@{user\_list.h}}
+\doxysubsubsection{\texorpdfstring{user\_list\_add\_sorted()}{user\_list\_add\_sorted()}}
+{\footnotesize\ttfamily void user\+\_\+list\+\_\+add\+\_\+sorted (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$}]{user\+\_\+list,  }\item[{\mbox{\hyperlink{user_8h_a49b98517e75d42b7645342221a8b8079}{USER}} $\ast$}]{user }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{user__list_8h_a88874cce6fef9e68428c9e542fe5416b}\label{user__list_8h_a88874cce6fef9e68428c9e542fe5416b}} 
+\index{user\_list.h@{user\_list.h}!user\_list\_add\_tail@{user\_list\_add\_tail}}
+\index{user\_list\_add\_tail@{user\_list\_add\_tail}!user\_list.h@{user\_list.h}}
+\doxysubsubsection{\texorpdfstring{user\_list\_add\_tail()}{user\_list\_add\_tail()}}
+{\footnotesize\ttfamily void user\+\_\+list\+\_\+add\+\_\+tail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$}]{user\+\_\+list,  }\item[{\mbox{\hyperlink{user_8h_a49b98517e75d42b7645342221a8b8079}{USER}} $\ast$}]{user }\end{DoxyParamCaption})}
+
+Add user to tail 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structuser__list}{user\+\_\+list}}} & \\
+\hline
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{user__list_8h_a361f9a8c3907b61f2ecfd4db9306483a}\label{user__list_8h_a361f9a8c3907b61f2ecfd4db9306483a}} 
+\index{user\_list.h@{user\_list.h}!user\_list\_create@{user\_list\_create}}
+\index{user\_list\_create@{user\_list\_create}!user\_list.h@{user\_list.h}}
+\doxysubsubsection{\texorpdfstring{user\_list\_create()}{user\_list\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$ user\+\_\+list\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create user list \begin{DoxyReturn}{Returns}
+list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user__list_8h_a5e487522acf92090158e9868b8660d88}\label{user__list_8h_a5e487522acf92090158e9868b8660d88}} 
+\index{user\_list.h@{user\_list.h}!user\_list\_get@{user\_list\_get}}
+\index{user\_list\_get@{user\_list\_get}!user\_list.h@{user\_list.h}}
+\doxysubsubsection{\texorpdfstring{user\_list\_get()}{user\_list\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{user_8h_a49b98517e75d42b7645342221a8b8079}{USER}} $\ast$ user\+\_\+list\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$}]{user\+\_\+list,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+Get user from list 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structuser__list}{user\+\_\+list}}} & \\
+\hline
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{user__list_8h_abd6838f11c3ec7138eea09a2dcceb8fa}\label{user__list_8h_abd6838f11c3ec7138eea09a2dcceb8fa}} 
+\index{user\_list.h@{user\_list.h}!user\_list\_remove@{user\_list\_remove}}
+\index{user\_list\_remove@{user\_list\_remove}!user\_list.h@{user\_list.h}}
+\doxysubsubsection{\texorpdfstring{user\_list\_remove()}{user\_list\_remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{user_8h_a49b98517e75d42b7645342221a8b8079}{USER}} $\ast$ user\+\_\+list\+\_\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$}]{user\+\_\+list,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+Remove user 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structuser__list}{user\+\_\+list}}} & \\
+\hline
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{user__list_8h_ab3729293daa68b08953787ababb179ba}\label{user__list_8h_ab3729293daa68b08953787ababb179ba}} 
+\index{user\_list.h@{user\_list.h}!user\_list\_size@{user\_list\_size}}
+\index{user\_list\_size@{user\_list\_size}!user\_list.h@{user\_list.h}}
+\doxysubsubsection{\texorpdfstring{user\_list\_size()}{user\_list\_size()}}
+{\footnotesize\ttfamily int user\+\_\+list\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$}]{user\+\_\+list }\end{DoxyParamCaption})}
+
+Size of list user 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structuser__list}{user\+\_\+list}}} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{user__list_8h_ae68547103fa1e1bae433f8596e9ac790}\label{user__list_8h_ae68547103fa1e1bae433f8596e9ac790}} 
+\index{user\_list.h@{user\_list.h}!user\_list\_sort@{user\_list\_sort}}
+\index{user\_list\_sort@{user\_list\_sort}!user\_list.h@{user\_list.h}}
+\doxysubsubsection{\texorpdfstring{user\_list\_sort()}{user\_list\_sort()}}
+{\footnotesize\ttfamily void user\+\_\+list\+\_\+sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{user__list_8h_a5b8ee83ac339e40d4bbb3634a8a0e0be}{USER\+\_\+\+LIST}} $\ast$}]{user\+\_\+list }\end{DoxyParamCaption})}
+

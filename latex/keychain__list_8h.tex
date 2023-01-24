@@ -1,0 +1,118 @@
+\hypertarget{keychain__list_8h}{}\doxysection{keychain\+\_\+list.\+h File Reference}
+\label{keychain__list_8h}\index{keychain\_list.h@{keychain\_list.h}}
+{\ttfamily \#include \char`\"{}key\+\_\+holder.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structkey__chain}{key\+\_\+chain}}
+\item 
+struct \mbox{\hyperlink{structkey__chain__node}{key\+\_\+chain\+\_\+node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structkey__chain}{key\+\_\+chain}} \mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}}
+\item 
+typedef struct \mbox{\hyperlink{structkey__chain__node}{key\+\_\+chain\+\_\+node}} \mbox{\hyperlink{keychain__list_8h_a5455e789acd13ebf1d1617770bee199d}{KEY\+\_\+\+CHAIN\+\_\+\+NODE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}} $\ast$ \mbox{\hyperlink{keychain__list_8h_a0a8a9a8c20f37f553ed3035c3fe98849}{keychain\+\_\+create}} ()
+\item 
+void \mbox{\hyperlink{keychain__list_8h_a83883cd282d1610cc8a9675037183fb2}{keychain\+\_\+add}} (\mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}} $\ast$keychain, \mbox{\hyperlink{struct_k_e_y___h_o_l_d_e_r}{KEY\+\_\+\+HOLDER}} $\ast$key\+\_\+holder)
+\item 
+\mbox{\hyperlink{struct_k_e_y___h_o_l_d_e_r}{KEY\+\_\+\+HOLDER}} $\ast$ \mbox{\hyperlink{keychain__list_8h_a91cc6ef8398d821dca9bb0b23f0280cf}{keychain\+\_\+get}} (\mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}} $\ast$keychain, int position)
+\item 
+\mbox{\hyperlink{struct_k_e_y___h_o_l_d_e_r}{KEY\+\_\+\+HOLDER}} $\ast$ \mbox{\hyperlink{keychain__list_8h_a458c7f3695838250b55922c12b5f02bd}{keychain\+\_\+remove}} (\mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}} $\ast$keychain, int position)
+\item 
+int \mbox{\hyperlink{keychain__list_8h_a991560c16bd8bd5a6e481523e8e50bff}{keychain\+\_\+size}} (\mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}} $\ast$keychain)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}\label{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}} 
+\index{keychain\_list.h@{keychain\_list.h}!KEY\_CHAIN@{KEY\_CHAIN}}
+\index{KEY\_CHAIN@{KEY\_CHAIN}!keychain\_list.h@{keychain\_list.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_CHAIN}{KEY\_CHAIN}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structkey__chain}{key\+\_\+chain}} \mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}}}
+
+\mbox{\Hypertarget{keychain__list_8h_a5455e789acd13ebf1d1617770bee199d}\label{keychain__list_8h_a5455e789acd13ebf1d1617770bee199d}} 
+\index{keychain\_list.h@{keychain\_list.h}!KEY\_CHAIN\_NODE@{KEY\_CHAIN\_NODE}}
+\index{KEY\_CHAIN\_NODE@{KEY\_CHAIN\_NODE}!keychain\_list.h@{keychain\_list.h}}
+\doxysubsubsection{\texorpdfstring{KEY\_CHAIN\_NODE}{KEY\_CHAIN\_NODE}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structkey__chain__node}{key\+\_\+chain\+\_\+node}} \mbox{\hyperlink{keychain__list_8h_a5455e789acd13ebf1d1617770bee199d}{KEY\+\_\+\+CHAIN\+\_\+\+NODE}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{keychain__list_8h_a83883cd282d1610cc8a9675037183fb2}\label{keychain__list_8h_a83883cd282d1610cc8a9675037183fb2}} 
+\index{keychain\_list.h@{keychain\_list.h}!keychain\_add@{keychain\_add}}
+\index{keychain\_add@{keychain\_add}!keychain\_list.h@{keychain\_list.h}}
+\doxysubsubsection{\texorpdfstring{keychain\_add()}{keychain\_add()}}
+{\footnotesize\ttfamily void keychain\+\_\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}} $\ast$}]{keychain,  }\item[{\mbox{\hyperlink{struct_k_e_y___h_o_l_d_e_r}{KEY\+\_\+\+HOLDER}} $\ast$}]{key\+\_\+holder }\end{DoxyParamCaption})}
+
+Add keychain 
+\begin{DoxyParams}{Parameters}
+{\em keychain} & \\
+\hline
+{\em key\+\_\+holder} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{keychain__list_8h_a0a8a9a8c20f37f553ed3035c3fe98849}\label{keychain__list_8h_a0a8a9a8c20f37f553ed3035c3fe98849}} 
+\index{keychain\_list.h@{keychain\_list.h}!keychain\_create@{keychain\_create}}
+\index{keychain\_create@{keychain\_create}!keychain\_list.h@{keychain\_list.h}}
+\doxysubsubsection{\texorpdfstring{keychain\_create()}{keychain\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}} $\ast$ keychain\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create keychain \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{keychain__list_8h_a91cc6ef8398d821dca9bb0b23f0280cf}\label{keychain__list_8h_a91cc6ef8398d821dca9bb0b23f0280cf}} 
+\index{keychain\_list.h@{keychain\_list.h}!keychain\_get@{keychain\_get}}
+\index{keychain\_get@{keychain\_get}!keychain\_list.h@{keychain\_list.h}}
+\doxysubsubsection{\texorpdfstring{keychain\_get()}{keychain\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_k_e_y___h_o_l_d_e_r}{KEY\+\_\+\+HOLDER}} $\ast$ keychain\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}} $\ast$}]{keychain,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+Get Keychain 
+\begin{DoxyParams}{Parameters}
+{\em keychain} & \\
+\hline
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{keychain__list_8h_a458c7f3695838250b55922c12b5f02bd}\label{keychain__list_8h_a458c7f3695838250b55922c12b5f02bd}} 
+\index{keychain\_list.h@{keychain\_list.h}!keychain\_remove@{keychain\_remove}}
+\index{keychain\_remove@{keychain\_remove}!keychain\_list.h@{keychain\_list.h}}
+\doxysubsubsection{\texorpdfstring{keychain\_remove()}{keychain\_remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_k_e_y___h_o_l_d_e_r}{KEY\+\_\+\+HOLDER}} $\ast$ keychain\+\_\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}} $\ast$}]{keychain,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+Remove keychain 
+\begin{DoxyParams}{Parameters}
+{\em keychain} & \\
+\hline
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+kh 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keychain__list_8h_a991560c16bd8bd5a6e481523e8e50bff}\label{keychain__list_8h_a991560c16bd8bd5a6e481523e8e50bff}} 
+\index{keychain\_list.h@{keychain\_list.h}!keychain\_size@{keychain\_size}}
+\index{keychain\_size@{keychain\_size}!keychain\_list.h@{keychain\_list.h}}
+\doxysubsubsection{\texorpdfstring{keychain\_size()}{keychain\_size()}}
+{\footnotesize\ttfamily int keychain\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\+\_\+\+CHAIN}} $\ast$}]{keychain }\end{DoxyParamCaption})}
+
+Size of keychain 
+\begin{DoxyParams}{Parameters}
+{\em keychain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

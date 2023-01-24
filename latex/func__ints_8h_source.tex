@@ -1,0 +1,67 @@
+\hypertarget{func__ints_8h_source}{}\doxysection{func\+\_\+ints.\+h}
+\mbox{\hyperlink{func__ints_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ AED1\ \&\ LP1\ 2022-\/2023\ (PART\ 1)}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ AED1\_LP1\_2223\_PROJ\_TESTS\_AED1\_LP1\_2223\_PROJ\_PART1\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ AED1\_LP1\_2223\_PROJ\_TESTS\_AED1\_LP1\_2223\_PROJ\_PART1\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{func__ints_8h_a1ae8524a033d3a3efbc017d409904568}{new\_public\_key\_int}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{short}*\ \mbox{\hyperlink{func__ints_8h_ac6fff5ebb71acc1a93a713b53b252985}{key\_long\_2\_digits\_int}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ key);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{func__ints_8h_a994dfd75529015fcd8dd097f8b894b89}{key\_digits\_2\_long\_int}}(\textcolor{keywordtype}{short}*\ keydigits);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{func__ints_8h_afe1900434f1fc67674fa5f4872b25dc2}{calc\_private\_key\_int}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ pubkey);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{func__ints_8h_a2be1627101027aa886721503e15ff0e3}{calc\_runlength\_int}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ privkey);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00049\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{func__ints_8h_aba320debae66ee15fcfcb4e35ede282a}{private\_key\_from\_runlength\_int}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ runlengthkey);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{short}**\ \mbox{\hyperlink{func__ints_8h_ab57a67bdbd2f4335d086d701aa0d0d05}{alloc\_matrix\_int}}(\textcolor{keywordtype}{int}\ nlines,\ \textcolor{keywordtype}{int}\ ncolumns);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_a626f40605cdb9040621fc964b4768ba1}{store\_key\_int}}(\textcolor{keywordtype}{short}\ **matrix,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ key);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_a1f0165581a5049bae2c8ddf4bd1e327a}{print\_matrix}}(\textcolor{keywordtype}{short}\ **matrix);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00078\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{func__ints_8h_af54dc598aec3072f4eff6543fa328af3}{exists\_key\_int}}(\textcolor{keywordtype}{short}\ **matrix,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ key);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{func__ints_8h_a1d6137d5eb500819fb8ef68087c8af7d}{get\_private\_key\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpub,\ \textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ pubkey);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00098\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{func__ints_8h_ad0f77da6a9123b930d1e3e806cce1929}{get\_runlength\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{short}\ **matrix\_kcod,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ privkey);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00109\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{func__ints_8h_af38523511f3dc5b934d80bea89f29890}{delete\_key\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpub,\ \textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{short}\ **matrix\_kcod,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{short}\ pubkey);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00116\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_a228cedd80de9a40c6c877969a75da4be}{bulk\_populate\_public\_keys\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpub,\ \textcolor{keywordtype}{int}\ lines);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00124\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_ab7edbf9ef7c06a182132626f84b74aba}{bulk\_compute\_private\_keys\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpub,\ \textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{int}\ lines);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00132\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_a09f1d1b1e650bc38d92630ddb99830a9}{bulk\_compute\_runlengths\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{short}\ **matrix\_kcod,\ \textcolor{keywordtype}{int}\ lines);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00142\ \textcolor{keywordtype}{short}**\ \mbox{\hyperlink{func__ints_8h_a34832ca96e65666ea1a622017daf9179}{search\_private\_keys\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpub,\ \textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ partialpubkey);}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00150\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_a456142993e9e3142ec2358121e128348}{sort\_matrix\_int}}(\textcolor{keywordtype}{short}\ **matrix,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{int}\ order);}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00160\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_ac3e0ae59e431c99541da71d28303bb72}{sort\_all\_matrices\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpub,\ \textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{short}\ **matrix\_kcod,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{int}\ order);}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00170\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_a8a0f17e148aad725dcb7c713d5ddac9f}{list\_keys\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpub,\ \textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{short}\ **matrix\_kcod,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{int}\ order);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00180\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_ab62283062a1c8103e7eb06ed93b9f691}{save\_txt\_keys\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpub,\ \textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{short}\ **matrix\_kcod,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{char}\ filename[]);}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00190\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_a7b578b8cc4ad18d91d8c3ca2ce771b23}{load\_txt\_keys\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpub,\ \textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{short}\ **matrix\_kcod,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{char}\ filename[]);}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00200\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_a45505e32ed25e7699ecdcdd001e9b236}{save\_bin\_keys\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpub,\ \textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{short}\ **matrix\_kcod,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{char}\ filename[]);}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00210\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{func__ints_8h_a1e0c4a5278c2a550bdce7eb5ded262ff}{load\_bin\_keys\_int}}(\textcolor{keywordtype}{short}\ **matrix\_kpub,\ \textcolor{keywordtype}{short}\ **matrix\_kpriv,\ \textcolor{keywordtype}{short}\ **matrix\_kcod,\ \textcolor{keywordtype}{int}\ lines,\ \textcolor{keywordtype}{char}\ filename[]);}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{func__ints_8h_a9c27767e3361fbb3d7b9752c9a81c97a}{main\_func\_ints}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *argv[]);}
+\DoxyCodeLine{00214\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//AED1\_LP1\_2223\_PROJ\_TESTS\_AED1\_LP1\_2223\_PROJ\_PART1\_H}}
+
+\end{DoxyCode}

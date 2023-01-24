@@ -1,0 +1,433 @@
+\hypertarget{func__chars_8h}{}\doxysection{func\+\_\+chars.\+h File Reference}
+\label{func__chars_8h}\index{func\_chars.h@{func\_chars.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{func__chars_8h_a8c63b93e9c737d0aba185e07304141d4}{key\+\_\+long\+\_\+2\+\_\+digits\+\_\+char}} (unsigned long long key)
+\item 
+unsigned long long \mbox{\hyperlink{func__chars_8h_ad58d4df725d61f185ee941881a73a090}{key\+\_\+digits\+\_\+2\+\_\+long\+\_\+char}} (char $\ast$keydigits)
+\item 
+unsigned long long \mbox{\hyperlink{func__chars_8h_a52445bfd34f7c9165c9b0a41326454ce}{calc\+\_\+private\+\_\+key\+\_\+char}} (unsigned long long pubkey)
+\item 
+unsigned long long \mbox{\hyperlink{func__chars_8h_a282600e9319251c3a67f6ee95ce5fe46}{calc\+\_\+runlength\+\_\+char}} (unsigned long long privkey)
+\item 
+unsigned long long \mbox{\hyperlink{func__chars_8h_a3471dca410e6f6dbfc96a9b14649374a}{private\+\_\+key\+\_\+from\+\_\+runlength\+\_\+char}} (unsigned long long runlengthkey)
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{func__chars_8h_a73c8d3ad4ac693c406f76c190a728692}{alloc\+\_\+matrix\+\_\+char}} (int nlines, int ncolumns)
+\item 
+void \mbox{\hyperlink{func__chars_8h_afc989ff6c3c69e4abcd827a9fd0bf0fe}{store\+\_\+key\+\_\+char}} (char $\ast$$\ast$matrix, int lines, unsigned long long key)
+\item 
+int \mbox{\hyperlink{func__chars_8h_afc19f33db8839d707d7a369e8268cb07}{exists\+\_\+key\+\_\+char}} (char $\ast$$\ast$matrix, int lines, unsigned long long key)
+\item 
+unsigned long long \mbox{\hyperlink{func__chars_8h_a6e69f47b72393a8e82487c756110f35b}{get\+\_\+private\+\_\+key\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpub, char $\ast$$\ast$matrix\+\_\+kpriv, int lines, unsigned long long pubkey)
+\item 
+unsigned long long \mbox{\hyperlink{func__chars_8h_a05699e0569ee21c3b35be709e8132b16}{get\+\_\+runlength\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpriv, char $\ast$$\ast$matrix\+\_\+kcod, int lines, unsigned long long privkey)
+\item 
+unsigned long long \mbox{\hyperlink{func__chars_8h_a6fdc3ee0eed214ce9556f56f0024f2cd}{delete\+\_\+key\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpub, char $\ast$$\ast$matrix\+\_\+kpriv, char $\ast$$\ast$matrix\+\_\+kcod, int lines, char pubkey)
+\item 
+void \mbox{\hyperlink{func__chars_8h_a5ec9684cd8576af4dd4e97293c802c53}{bulk\+\_\+populate\+\_\+public\+\_\+keys\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpub, int lines)
+\item 
+void \mbox{\hyperlink{func__chars_8h_a96cec6087261a7b993edcad8a73ecf3d}{bulk\+\_\+compute\+\_\+private\+\_\+keys\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpub, char $\ast$$\ast$matrix\+\_\+kpriv, int lines)
+\item 
+void \mbox{\hyperlink{func__chars_8h_afaaece3b362f2cc9a3ec9f2bb192190b}{bulk\+\_\+compute\+\_\+runlengths\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpriv, char $\ast$$\ast$matrix\+\_\+kcod, int lines)
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{func__chars_8h_ab9bec9064a5be9d7a4e6c3ff531d3a53}{search\+\_\+private\+\_\+keys\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpub, char $\ast$$\ast$matrix\+\_\+kpriv, int lines, unsigned long long partialpubkey)
+\item 
+void \mbox{\hyperlink{func__chars_8h_af64a5a5c61d659d32e5fb799dabcc745}{sort\+\_\+matrix\+\_\+char}} (char $\ast$$\ast$matrix, int lines, int order)
+\item 
+void \mbox{\hyperlink{func__chars_8h_a25c49187dcce27f089c9be5fb16638c2}{sort\+\_\+all\+\_\+matrices\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpub, char $\ast$$\ast$matrix\+\_\+kpriv, char $\ast$$\ast$matrix\+\_\+kcod, int lines, int order)
+\item 
+void \mbox{\hyperlink{func__chars_8h_aca4d79bb4b12fc7ce2cb07c2b54da72b}{list\+\_\+keys\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpub, char $\ast$$\ast$matrix\+\_\+kpriv, char $\ast$$\ast$matrix\+\_\+kcod, int lines, int order)
+\item 
+void \mbox{\hyperlink{func__chars_8h_a2be79ab2bd013e0452f022328ed8f9b5}{save\+\_\+txt\+\_\+keys\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpub, char $\ast$$\ast$matrix\+\_\+kpriv, char $\ast$$\ast$matrix\+\_\+kcod, int lines, char filename\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{func__chars_8h_a31e6039fc580032b14ea5424bc34d755}{load\+\_\+txt\+\_\+keys\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpub, char $\ast$$\ast$matrix\+\_\+kpriv, char $\ast$$\ast$matrix\+\_\+kcod, int lines, char filename\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{func__chars_8h_aab296c48ca03d2e77e08bd403ae36b26}{save\+\_\+bin\+\_\+keys\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpub, char $\ast$$\ast$matrix\+\_\+kpriv, char $\ast$$\ast$matrix\+\_\+kcod, int lines, char filename\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{func__chars_8h_afccf78980f6c1adebd900dc998b7bcea}{load\+\_\+bin\+\_\+keys\+\_\+char}} (char $\ast$$\ast$matrix\+\_\+kpub, char $\ast$$\ast$matrix\+\_\+kpriv, char $\ast$$\ast$matrix\+\_\+kcod, int lines, char filename\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{func__chars_8h_a2fed46561324398ebeaa96ff95b07b2d}{main\+\_\+func\+\_\+chars}} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{func__chars_8h_a73c8d3ad4ac693c406f76c190a728692}\label{func__chars_8h_a73c8d3ad4ac693c406f76c190a728692}} 
+\index{func\_chars.h@{func\_chars.h}!alloc\_matrix\_char@{alloc\_matrix\_char}}
+\index{alloc\_matrix\_char@{alloc\_matrix\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{alloc\_matrix\_char()}{alloc\_matrix\_char()}}
+{\footnotesize\ttfamily char $\ast$$\ast$ alloc\+\_\+matrix\+\_\+char (\begin{DoxyParamCaption}\item[{int}]{nlines,  }\item[{int}]{ncolumns }\end{DoxyParamCaption})}
+
+Memory allocation for a char matrix with nlines and ncolumns 
+\begin{DoxyParams}{Parameters}
+{\em nlines} & -\/ number of lines \\
+\hline
+{\em ncolumns} & -\/ number of columns \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the allocated memory of the matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{func__chars_8h_a96cec6087261a7b993edcad8a73ecf3d}\label{func__chars_8h_a96cec6087261a7b993edcad8a73ecf3d}} 
+\index{func\_chars.h@{func\_chars.h}!bulk\_compute\_private\_keys\_char@{bulk\_compute\_private\_keys\_char}}
+\index{bulk\_compute\_private\_keys\_char@{bulk\_compute\_private\_keys\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{bulk\_compute\_private\_keys\_char()}{bulk\_compute\_private\_keys\_char()}}
+{\footnotesize\ttfamily void bulk\+\_\+compute\+\_\+private\+\_\+keys\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpub,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{int}]{lines }\end{DoxyParamCaption})}
+
+Automatically calculate, generate and store all private keys for the existing public keys. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpub} & -\/ public keys matrix \\
+\hline
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__chars_8h_afaaece3b362f2cc9a3ec9f2bb192190b}\label{func__chars_8h_afaaece3b362f2cc9a3ec9f2bb192190b}} 
+\index{func\_chars.h@{func\_chars.h}!bulk\_compute\_runlengths\_char@{bulk\_compute\_runlengths\_char}}
+\index{bulk\_compute\_runlengths\_char@{bulk\_compute\_runlengths\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{bulk\_compute\_runlengths\_char()}{bulk\_compute\_runlengths\_char()}}
+{\footnotesize\ttfamily void bulk\+\_\+compute\+\_\+runlengths\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kcod,  }\item[{int}]{lines }\end{DoxyParamCaption})}
+
+Automatically calculate and store all run-\/lengths for the existing private keys. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em matrix\+\_\+kcod} & -\/ run-\/lengths matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__chars_8h_a5ec9684cd8576af4dd4e97293c802c53}\label{func__chars_8h_a5ec9684cd8576af4dd4e97293c802c53}} 
+\index{func\_chars.h@{func\_chars.h}!bulk\_populate\_public\_keys\_char@{bulk\_populate\_public\_keys\_char}}
+\index{bulk\_populate\_public\_keys\_char@{bulk\_populate\_public\_keys\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{bulk\_populate\_public\_keys\_char()}{bulk\_populate\_public\_keys\_char()}}
+{\footnotesize\ttfamily void bulk\+\_\+populate\+\_\+public\+\_\+keys\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpub,  }\item[{int}]{lines }\end{DoxyParamCaption})}
+
+Automatically generate and save a given amount ($<$lines$>$) of public keys. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpub} & -\/ public keys matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__chars_8h_a52445bfd34f7c9165c9b0a41326454ce}\label{func__chars_8h_a52445bfd34f7c9165c9b0a41326454ce}} 
+\index{func\_chars.h@{func\_chars.h}!calc\_private\_key\_char@{calc\_private\_key\_char}}
+\index{calc\_private\_key\_char@{calc\_private\_key\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{calc\_private\_key\_char()}{calc\_private\_key\_char()}}
+{\footnotesize\ttfamily unsigned long long calc\+\_\+private\+\_\+key\+\_\+char (\begin{DoxyParamCaption}\item[{unsigned long long}]{pubkey }\end{DoxyParamCaption})}
+
+Calculate the bipolar private key from a given public key (returns the bipolar private key). 
+\begin{DoxyParams}{Parameters}
+{\em pubkey} & -\/ public key for which to calculate the private key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bipolar number representing the private key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{func__chars_8h_a282600e9319251c3a67f6ee95ce5fe46}\label{func__chars_8h_a282600e9319251c3a67f6ee95ce5fe46}} 
+\index{func\_chars.h@{func\_chars.h}!calc\_runlength\_char@{calc\_runlength\_char}}
+\index{calc\_runlength\_char@{calc\_runlength\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{calc\_runlength\_char()}{calc\_runlength\_char()}}
+{\footnotesize\ttfamily unsigned long long calc\+\_\+runlength\+\_\+char (\begin{DoxyParamCaption}\item[{unsigned long long}]{privkey }\end{DoxyParamCaption})}
+
+Calculate the run-\/length from a given private key. 
+\begin{DoxyParams}{Parameters}
+{\em privkey} & -\/ private key for which to calculate the run-\/length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+run-\/length number representing the private key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{func__chars_8h_a6fdc3ee0eed214ce9556f56f0024f2cd}\label{func__chars_8h_a6fdc3ee0eed214ce9556f56f0024f2cd}} 
+\index{func\_chars.h@{func\_chars.h}!delete\_key\_char@{delete\_key\_char}}
+\index{delete\_key\_char@{delete\_key\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{delete\_key\_char()}{delete\_key\_char()}}
+{\footnotesize\ttfamily unsigned long long delete\+\_\+key\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpub,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kcod,  }\item[{int}]{lines,  }\item[{char}]{pubkey }\end{DoxyParamCaption})}
+
+Delete a given public key (and corresponding priv and runlength keys) from all matrices. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpub} & -\/ public keys matrix \\
+\hline
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em matrix\+\_\+kcod} & -\/ run-\/lengths matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em pubkey} & -\/ public key to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pubkey that was deleted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{func__chars_8h_afc19f33db8839d707d7a369e8268cb07}\label{func__chars_8h_afc19f33db8839d707d7a369e8268cb07}} 
+\index{func\_chars.h@{func\_chars.h}!exists\_key\_char@{exists\_key\_char}}
+\index{exists\_key\_char@{exists\_key\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{exists\_key\_char()}{exists\_key\_char()}}
+{\footnotesize\ttfamily int exists\+\_\+key\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix,  }\item[{int}]{lines,  }\item[{unsigned long long}]{key }\end{DoxyParamCaption})}
+
+Verify if a given key exists in the matrix. 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & -\/ matrix with keys \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em key} & -\/ key to check if it exists \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if it exists, 0 if it doesn\textquotesingle{}t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{func__chars_8h_a6e69f47b72393a8e82487c756110f35b}\label{func__chars_8h_a6e69f47b72393a8e82487c756110f35b}} 
+\index{func\_chars.h@{func\_chars.h}!get\_private\_key\_char@{get\_private\_key\_char}}
+\index{get\_private\_key\_char@{get\_private\_key\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{get\_private\_key\_char()}{get\_private\_key\_char()}}
+{\footnotesize\ttfamily unsigned long long get\+\_\+private\+\_\+key\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpub,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{int}]{lines,  }\item[{unsigned long long}]{pubkey }\end{DoxyParamCaption})}
+
+Returns the private key corresponding to the given public key 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpub} & -\/ public keys matrix \\
+\hline
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em pubkey} & -\/ public key for which we want the private key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+private key of the given pubkey 
+\end{DoxyReturn}
+\mbox{\Hypertarget{func__chars_8h_a05699e0569ee21c3b35be709e8132b16}\label{func__chars_8h_a05699e0569ee21c3b35be709e8132b16}} 
+\index{func\_chars.h@{func\_chars.h}!get\_runlength\_char@{get\_runlength\_char}}
+\index{get\_runlength\_char@{get\_runlength\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{get\_runlength\_char()}{get\_runlength\_char()}}
+{\footnotesize\ttfamily unsigned long long get\+\_\+runlength\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kcod,  }\item[{int}]{lines,  }\item[{unsigned long long}]{privkey }\end{DoxyParamCaption})}
+
+Returns the run-\/length key of a given private key 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em matrix\+\_\+kcod} & -\/ run-\/lengths matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em pubkey} & -\/ public key for which we want the private key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+private key runlength of the given pubkey 
+\end{DoxyReturn}
+\mbox{\Hypertarget{func__chars_8h_ad58d4df725d61f185ee941881a73a090}\label{func__chars_8h_ad58d4df725d61f185ee941881a73a090}} 
+\index{func\_chars.h@{func\_chars.h}!key\_digits\_2\_long\_char@{key\_digits\_2\_long\_char}}
+\index{key\_digits\_2\_long\_char@{key\_digits\_2\_long\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{key\_digits\_2\_long\_char()}{key\_digits\_2\_long\_char()}}
+{\footnotesize\ttfamily unsigned long long key\+\_\+digits\+\_\+2\+\_\+long\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$}]{keydigits }\end{DoxyParamCaption})}
+
+Receives an array of digits in ascii i.\+e. chars and returns the long key. 
+\begin{DoxyParams}{Parameters}
+{\em keydigits} & -\/ array of digits of key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+address of array of digits for a given key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{func__chars_8h_a8c63b93e9c737d0aba185e07304141d4}\label{func__chars_8h_a8c63b93e9c737d0aba185e07304141d4}} 
+\index{func\_chars.h@{func\_chars.h}!key\_long\_2\_digits\_char@{key\_long\_2\_digits\_char}}
+\index{key\_long\_2\_digits\_char@{key\_long\_2\_digits\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{key\_long\_2\_digits\_char()}{key\_long\_2\_digits\_char()}}
+{\footnotesize\ttfamily char $\ast$ key\+\_\+long\+\_\+2\+\_\+digits\+\_\+char (\begin{DoxyParamCaption}\item[{unsigned long long}]{key }\end{DoxyParamCaption})}
+
+Create an array of digits in ascii i.\+e. chars for a given key. 
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ long key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+address of array of digits in ascii for a given key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{func__chars_8h_aca4d79bb4b12fc7ce2cb07c2b54da72b}\label{func__chars_8h_aca4d79bb4b12fc7ce2cb07c2b54da72b}} 
+\index{func\_chars.h@{func\_chars.h}!list\_keys\_char@{list\_keys\_char}}
+\index{list\_keys\_char@{list\_keys\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{list\_keys\_char()}{list\_keys\_char()}}
+{\footnotesize\ttfamily void list\+\_\+keys\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpub,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kcod,  }\item[{int}]{lines,  }\item[{int}]{order }\end{DoxyParamCaption})}
+
+Print all keys on the console, sorted by pubkeys sizes (i.\+e. number of digits). 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpub} & -\/ public keys matrix \\
+\hline
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em matrix\+\_\+kcod} & -\/ run-\/lengths matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em order} & -\/ order == 0 ? current order \+: order == 1 ? ascending \+: descending \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__chars_8h_afccf78980f6c1adebd900dc998b7bcea}\label{func__chars_8h_afccf78980f6c1adebd900dc998b7bcea}} 
+\index{func\_chars.h@{func\_chars.h}!load\_bin\_keys\_char@{load\_bin\_keys\_char}}
+\index{load\_bin\_keys\_char@{load\_bin\_keys\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{load\_bin\_keys\_char()}{load\_bin\_keys\_char()}}
+{\footnotesize\ttfamily void load\+\_\+bin\+\_\+keys\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpub,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kcod,  }\item[{int}]{lines,  }\item[{char}]{filename\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Loads data into the matrices from a binary file. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpub} & -\/ public keys matrix \\
+\hline
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em matrix\+\_\+kcod} & -\/ run-\/lengths matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em filename} & -\/name of the binary file to load data from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__chars_8h_a31e6039fc580032b14ea5424bc34d755}\label{func__chars_8h_a31e6039fc580032b14ea5424bc34d755}} 
+\index{func\_chars.h@{func\_chars.h}!load\_txt\_keys\_char@{load\_txt\_keys\_char}}
+\index{load\_txt\_keys\_char@{load\_txt\_keys\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{load\_txt\_keys\_char()}{load\_txt\_keys\_char()}}
+{\footnotesize\ttfamily void load\+\_\+txt\+\_\+keys\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpub,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kcod,  }\item[{int}]{lines,  }\item[{char}]{filename\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Loads data into the matrices from a text file. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpub} & -\/ public keys matrix \\
+\hline
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em matrix\+\_\+kcod} & -\/ run-\/lengths matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em filename} & -\/ name of the text file to load data from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__chars_8h_a2fed46561324398ebeaa96ff95b07b2d}\label{func__chars_8h_a2fed46561324398ebeaa96ff95b07b2d}} 
+\index{func\_chars.h@{func\_chars.h}!main\_func\_chars@{main\_func\_chars}}
+\index{main\_func\_chars@{main\_func\_chars}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{main\_func\_chars()}{main\_func\_chars()}}
+{\footnotesize\ttfamily int main\+\_\+func\+\_\+chars (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{func__chars_8h_a3471dca410e6f6dbfc96a9b14649374a}\label{func__chars_8h_a3471dca410e6f6dbfc96a9b14649374a}} 
+\index{func\_chars.h@{func\_chars.h}!private\_key\_from\_runlength\_char@{private\_key\_from\_runlength\_char}}
+\index{private\_key\_from\_runlength\_char@{private\_key\_from\_runlength\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{private\_key\_from\_runlength\_char()}{private\_key\_from\_runlength\_char()}}
+{\footnotesize\ttfamily unsigned long long private\+\_\+key\+\_\+from\+\_\+runlength\+\_\+char (\begin{DoxyParamCaption}\item[{unsigned long long}]{runlengthkey }\end{DoxyParamCaption})}
+
+Calculate the private key from a run-\/length. 
+\begin{DoxyParams}{Parameters}
+{\em runlengthkey} & -\/ run-\/length for which to calculate the private key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+private key that corresponds to the runlengthkey arg 
+\end{DoxyReturn}
+\mbox{\Hypertarget{func__chars_8h_aab296c48ca03d2e77e08bd403ae36b26}\label{func__chars_8h_aab296c48ca03d2e77e08bd403ae36b26}} 
+\index{func\_chars.h@{func\_chars.h}!save\_bin\_keys\_char@{save\_bin\_keys\_char}}
+\index{save\_bin\_keys\_char@{save\_bin\_keys\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{save\_bin\_keys\_char()}{save\_bin\_keys\_char()}}
+{\footnotesize\ttfamily void save\+\_\+bin\+\_\+keys\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpub,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kcod,  }\item[{int}]{lines,  }\item[{char}]{filename\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Save all matrix data to a binary file 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpub} & -\/ public keys matrix \\
+\hline
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em matrix\+\_\+kcod} & -\/ run-\/lengths matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em filename} & -\/ name of the binary file where to store the data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__chars_8h_a2be79ab2bd013e0452f022328ed8f9b5}\label{func__chars_8h_a2be79ab2bd013e0452f022328ed8f9b5}} 
+\index{func\_chars.h@{func\_chars.h}!save\_txt\_keys\_char@{save\_txt\_keys\_char}}
+\index{save\_txt\_keys\_char@{save\_txt\_keys\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{save\_txt\_keys\_char()}{save\_txt\_keys\_char()}}
+{\footnotesize\ttfamily void save\+\_\+txt\+\_\+keys\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpub,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kcod,  }\item[{int}]{lines,  }\item[{char}]{filename\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Save all matrix data to a text file 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpub} & -\/ public keys matrix \\
+\hline
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em matrix\+\_\+kcod} & -\/ run-\/lengths matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em filename} & -\/ name of the text file where to store the data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__chars_8h_ab9bec9064a5be9d7a4e6c3ff531d3a53}\label{func__chars_8h_ab9bec9064a5be9d7a4e6c3ff531d3a53}} 
+\index{func\_chars.h@{func\_chars.h}!search\_private\_keys\_char@{search\_private\_keys\_char}}
+\index{search\_private\_keys\_char@{search\_private\_keys\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{search\_private\_keys\_char()}{search\_private\_keys\_char()}}
+{\footnotesize\ttfamily char $\ast$$\ast$ search\+\_\+private\+\_\+keys\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpub,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{int}]{lines,  }\item[{unsigned long long}]{partialpubkey }\end{DoxyParamCaption})}
+
+Return a list of all private keys matching a given partial public key. 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpub} & -\/ public keys matrix \\
+\hline
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em partialpubkey} & -\/ part of public key to filter the private keys \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array of private keys matching the partialpubkey 
+\end{DoxyReturn}
+\mbox{\Hypertarget{func__chars_8h_a25c49187dcce27f089c9be5fb16638c2}\label{func__chars_8h_a25c49187dcce27f089c9be5fb16638c2}} 
+\index{func\_chars.h@{func\_chars.h}!sort\_all\_matrices\_char@{sort\_all\_matrices\_char}}
+\index{sort\_all\_matrices\_char@{sort\_all\_matrices\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{sort\_all\_matrices\_char()}{sort\_all\_matrices\_char()}}
+{\footnotesize\ttfamily void sort\+\_\+all\+\_\+matrices\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix\+\_\+kpub,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kpriv,  }\item[{char $\ast$$\ast$}]{matrix\+\_\+kcod,  }\item[{int}]{lines,  }\item[{int}]{order }\end{DoxyParamCaption})}
+
+Sort all matrices keys in ascending or descending order 
+\begin{DoxyParams}{Parameters}
+{\em matrix\+\_\+kpub} & -\/ public keys matrix \\
+\hline
+{\em matrix\+\_\+kpriv} & -\/ private keys matrix \\
+\hline
+{\em matrix\+\_\+kcod} & -\/ run-\/lengths matrix \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em order} & -\/ order == 1 ? ascending \+: descending \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__chars_8h_af64a5a5c61d659d32e5fb799dabcc745}\label{func__chars_8h_af64a5a5c61d659d32e5fb799dabcc745}} 
+\index{func\_chars.h@{func\_chars.h}!sort\_matrix\_char@{sort\_matrix\_char}}
+\index{sort\_matrix\_char@{sort\_matrix\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{sort\_matrix\_char()}{sort\_matrix\_char()}}
+{\footnotesize\ttfamily void sort\+\_\+matrix\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix,  }\item[{int}]{lines,  }\item[{int}]{order }\end{DoxyParamCaption})}
+
+Sort a matrix keys in ascending or descending order 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & -\/ matrix to be sorted \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em order} & -\/ order == 1 ? ascending \+: descending \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__chars_8h_afc989ff6c3c69e4abcd827a9fd0bf0fe}\label{func__chars_8h_afc989ff6c3c69e4abcd827a9fd0bf0fe}} 
+\index{func\_chars.h@{func\_chars.h}!store\_key\_char@{store\_key\_char}}
+\index{store\_key\_char@{store\_key\_char}!func\_chars.h@{func\_chars.h}}
+\doxysubsubsection{\texorpdfstring{store\_key\_char()}{store\_key\_char()}}
+{\footnotesize\ttfamily void store\+\_\+key\+\_\+char (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix,  }\item[{int}]{lines,  }\item[{unsigned long long}]{key }\end{DoxyParamCaption})}
+
+Store a key (pub, priv or run-\/length) into the first available position of given matrix. 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & -\/ matrix to store the key \\
+\hline
+{\em lines} & -\/ matrix number of lines \\
+\hline
+{\em key} & -\/ key to be stored \\
+\hline
+\end{DoxyParams}

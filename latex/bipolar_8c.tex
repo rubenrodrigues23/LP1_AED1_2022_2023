@@ -1,0 +1,95 @@
+\hypertarget{bipolar_8c}{}\doxysection{bipolar.\+c File Reference}
+\label{bipolar_8c}\index{bipolar.c@{bipolar.c}}
+{\ttfamily \#include \char`\"{}bipolar.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libs\+\_\+src/lib\+\_\+util.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{bipolar_8c_a05ec23ea9e68706e210bd8f965beee10}{BUFFER}}~1024
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{bipolar_8c_ae7ad6f5b13fb3650b745bd05412ba997}{main\+\_\+bipolar}} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{bipolar_8c_afcb8cf4ba18ad43ea5c643b027cf0170}{is\+\_\+digit}} (char c)
+\item 
+int \mbox{\hyperlink{bipolar_8c_ae9bd1a806e864d4b300d058396034e6a}{bipolar\+\_\+number}} (char $\ast$text)
+\item 
+int \mbox{\hyperlink{bipolar_8c_a21235365a97fe0e7514995aaadf2a25b}{bipolar\+\_\+number\+\_\+ints}} (int num)
+\item 
+void \mbox{\hyperlink{bipolar_8c_aae388406395071756271ecc71f362a08}{count\+\_\+digits\+\_\+frequency}} (int num, int hist10\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{bipolar_8c_a05ec23ea9e68706e210bd8f965beee10}\label{bipolar_8c_a05ec23ea9e68706e210bd8f965beee10}} 
+\index{bipolar.c@{bipolar.c}!BUFFER@{BUFFER}}
+\index{BUFFER@{BUFFER}!bipolar.c@{bipolar.c}}
+\doxysubsubsection{\texorpdfstring{BUFFER}{BUFFER}}
+{\footnotesize\ttfamily \#define BUFFER~1024}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{bipolar_8c_ae9bd1a806e864d4b300d058396034e6a}\label{bipolar_8c_ae9bd1a806e864d4b300d058396034e6a}} 
+\index{bipolar.c@{bipolar.c}!bipolar\_number@{bipolar\_number}}
+\index{bipolar\_number@{bipolar\_number}!bipolar.c@{bipolar.c}}
+\doxysubsubsection{\texorpdfstring{bipolar\_number()}{bipolar\_number()}}
+{\footnotesize\ttfamily int bipolar\+\_\+number (\begin{DoxyParamCaption}\item[{char $\ast$}]{text }\end{DoxyParamCaption})}
+
+Recebe uma string e verifica se é bipolar 
+\begin{DoxyParams}{Parameters}
+{\em text} & número em string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor inteiro correspondente ao bipolar se text for representação válida de um bipolar, caso text não seja bipolar ou inteiro retorna código de erro negativo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bipolar_8c_a21235365a97fe0e7514995aaadf2a25b}\label{bipolar_8c_a21235365a97fe0e7514995aaadf2a25b}} 
+\index{bipolar.c@{bipolar.c}!bipolar\_number\_ints@{bipolar\_number\_ints}}
+\index{bipolar\_number\_ints@{bipolar\_number\_ints}!bipolar.c@{bipolar.c}}
+\doxysubsubsection{\texorpdfstring{bipolar\_number\_ints()}{bipolar\_number\_ints()}}
+{\footnotesize\ttfamily int bipolar\+\_\+number\+\_\+ints (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+Recebe uma string e verifica se é bipolar 
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor inteiro correspondente ao bipolar se text for representação válida de um bipolar, caso text não seja bipolar ou inteiro retorna código de erro negativo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bipolar_8c_aae388406395071756271ecc71f362a08}\label{bipolar_8c_aae388406395071756271ecc71f362a08}} 
+\index{bipolar.c@{bipolar.c}!count\_digits\_frequency@{count\_digits\_frequency}}
+\index{count\_digits\_frequency@{count\_digits\_frequency}!bipolar.c@{bipolar.c}}
+\doxysubsubsection{\texorpdfstring{count\_digits\_frequency()}{count\_digits\_frequency()}}
+{\footnotesize\ttfamily void count\+\_\+digits\+\_\+frequency (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{int}]{hist10\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Count digits frequency 
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+{\em hist10} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bipolar_8c_afcb8cf4ba18ad43ea5c643b027cf0170}\label{bipolar_8c_afcb8cf4ba18ad43ea5c643b027cf0170}} 
+\index{bipolar.c@{bipolar.c}!is\_digit@{is\_digit}}
+\index{is\_digit@{is\_digit}!bipolar.c@{bipolar.c}}
+\doxysubsubsection{\texorpdfstring{is\_digit()}{is\_digit()}}
+{\footnotesize\ttfamily int is\+\_\+digit (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+This function checks if a char is a digit or not. 
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ char to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 (if is digit); 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bipolar_8c_ae7ad6f5b13fb3650b745bd05412ba997}\label{bipolar_8c_ae7ad6f5b13fb3650b745bd05412ba997}} 
+\index{bipolar.c@{bipolar.c}!main\_bipolar@{main\_bipolar}}
+\index{main\_bipolar@{main\_bipolar}!bipolar.c@{bipolar.c}}
+\doxysubsubsection{\texorpdfstring{main\_bipolar()}{main\_bipolar()}}
+{\footnotesize\ttfamily int main\+\_\+bipolar (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+

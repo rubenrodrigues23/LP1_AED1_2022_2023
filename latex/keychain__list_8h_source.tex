@@ -1,0 +1,42 @@
+\hypertarget{keychain__list_8h_source}{}\doxysection{keychain\+\_\+list.\+h}
+\mbox{\hyperlink{keychain__list_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ LP1AED1\_PROJETO\_KEYCHAIN\_LIST\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ LP1AED1\_PROJETO\_KEYCHAIN\_LIST\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{key__holder_8h}{key\_holder.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <time.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structkey__chain}{key\_chain}}\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structkey__chain__node}{key\_chain\_node}}\ *\ \mbox{\hyperlink{structkey__chain_adc27cc2f565a10de67e9f1acd4d9c3fd}{head}};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structkey__chain_a439227feff9d7f55384e8780cfc2eb82}{size}};}
+\DoxyCodeLine{00011\ \}\ \mbox{\hyperlink{keychain__list_8h_a835b7ffbcbadeb792d617fb59dc096da}{KEY\_CHAIN}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structkey__chain__node}{key\_chain\_node}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{struct_k_e_y___h_o_l_d_e_r}{KEY\_HOLDER}}\ *\ \mbox{\hyperlink{structkey__chain__node_a3163f55fc5d4a1fd352e4f9de8de71ad}{key\_holder}};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{struct\ }tm\ \mbox{\hyperlink{structkey__chain__node_a831d6e26d0beef78ef6f4dc259c38d58}{date\_create}};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{struct\ }tm\ \mbox{\hyperlink{structkey__chain__node_a91d87b667d7cde11d970af809be99430}{date\_update}};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structkey__chain__node}{key\_chain\_node}}\ *\ \mbox{\hyperlink{structkey__chain__node_a6a69fd6932fdfca89f21be96786810c9}{next}};}
+\DoxyCodeLine{00019\ \}\ \mbox{\hyperlink{keychain__list_8h_a5455e789acd13ebf1d1617770bee199d}{KEY\_CHAIN\_NODE}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \mbox{\hyperlink{structkey__chain}{KEY\_CHAIN}}\ *\ \mbox{\hyperlink{keychain__list_8h_a0a8a9a8c20f37f553ed3035c3fe98849}{keychain\_create}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{keychain__list_8h_a83883cd282d1610cc8a9675037183fb2}{keychain\_add}}(\mbox{\hyperlink{structkey__chain}{KEY\_CHAIN}}\ *\ keychain,\ \mbox{\hyperlink{struct_k_e_y___h_o_l_d_e_r}{KEY\_HOLDER}}\ *\ \mbox{\hyperlink{structkey__chain__node_a3163f55fc5d4a1fd352e4f9de8de71ad}{key\_holder}});}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \mbox{\hyperlink{struct_k_e_y___h_o_l_d_e_r}{KEY\_HOLDER}}\ *\ \mbox{\hyperlink{keychain__list_8h_a91cc6ef8398d821dca9bb0b23f0280cf}{keychain\_get}}(\mbox{\hyperlink{structkey__chain}{KEY\_CHAIN}}\ *\ keychain,\ \textcolor{keywordtype}{int}\ position);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \mbox{\hyperlink{struct_k_e_y___h_o_l_d_e_r}{KEY\_HOLDER}}\ *\ \mbox{\hyperlink{keychain__list_8h_a458c7f3695838250b55922c12b5f02bd}{keychain\_remove}}(\mbox{\hyperlink{structkey__chain}{KEY\_CHAIN}}\ *\ keychain,\ \textcolor{keywordtype}{int}\ position);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{keychain__list_8h_a991560c16bd8bd5a6e481523e8e50bff}{keychain\_size}}(\mbox{\hyperlink{structkey__chain}{KEY\_CHAIN}}\ *\ keychain);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//LP1AED1\_PROJETO\_KEYCHAIN\_LIST\_H}}
+
+\end{DoxyCode}
